@@ -26,6 +26,7 @@
 <!-- Main CSS File -->
 <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
 <link href="{% static 'assets/css/propio.css' %}" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/tempusdominus-bootstrap-4@5.1.0/build/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
 
 
   <!-- =======================================================
@@ -38,7 +39,7 @@
 </head>
 
 <body class="index-page">
-
+<!--
     <header id="header" class="header d-flex align-items-center fixed-top">
         <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-center">
             <nav id="navmenu" class="navmenu">
@@ -55,7 +56,7 @@
     
         </div>
     </header>
-
+-->
     
 
   <main class="main">
@@ -82,38 +83,38 @@
           
           <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="400">
             <div class="icon-box">
-              <i class="bi bi-bullseye"></i>
-              <h3><a href="">Inicio</a></h3>
+              <i class="bi bi-stars"></i>
+              <h3><a href="#hero">Inicio</a></h3>
             </div>
           </div>
           <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="500">
             <div class="icon-box">
-              <i class="bi bi-fullscreen-exit"></i>
-              <h3><a href="">Acerca de nosotros</a></h3>
+              <i class="bi bi-list-stars"></i>
+              <h3><a href="#about">Nuestra historia</a></h3>
             </div>
           </div>
           <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="600">
             <div class="icon-box">
               <i class="bi bi-card-list"></i>
-              <h3><a href="">Servicios</a></h3>
+              <h3><a href="#services">Servicios</a></h3>
             </div>
           </div>
           <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="700">
             <div class="icon-box">
               <i class="bi bi-gem"></i>
-              <h3><a href="">Portafolios</a></h3>
+              <h3><a href="#portfolio">Portafolios</a></h3>
             </div>
           </div>
           <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="300">
             <div class="icon-box">
-              <i class="bi bi-binoculars"></i>
-              <h3><a href="">Nustros musicos</a></h3>
+              <i class="bi bi-music-note"></i>
+              <h3><a href="#team">Nustros musicos</a></h3>
             </div>
           </div>
           <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="300">
             <div class="icon-box">
-              <i class="bi bi-binoculars"></i>
-              <h3><a href="">Contactanos</a></h3>
+              <i class="bi bi-envelope-arrow-up-fill"></i>
+              <h3><a href="#contact">Contactanos</a></h3>
             </div>
           </div>
         </div>
@@ -127,34 +128,29 @@
 
     <!-- About Section -->
     <section id="about" class="about section">
-
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
         <div class="row gy-4">
-          <div class="col-lg-6 order-1 order-lg-2">
-            <img src="{% static 'assets/img/about.jpg' %}" class="img-fluid" alt="">
+          <div class="col-lg-6 order-1 order-lg-2 d-flex align-items-center justify-content-center">
+            <img src="{% static 'assets/img/propias/Sobre nosotros.jpeg' %}" class="img-fluid" alt="" style="margin-top: 20px; margin-left: 50px; border-radius: 20px;">
           </div>
+          
           <div class="col-lg-6 order-2 order-lg-1 content">
-            <h3>Voluptatem dignissimos provident</h3>
-            <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
+            <h3 style="font-size: 50px;">Sobre Nosotros 🎶</h3>
+            <p style="font-size: 20px;">
+              Todo comenzó en 2019 cuando la familia Bernal González decidió emprender el sueño de formar un mariachi en la ciudad de Acámbaro, Guanajuato. El padre, músico de toda la vida, transmitió su pasión por la música y por las tradiciones mexicanas a sus tres hijos. Inspirados por él, decidieron seguir el camino musical, primero como un pasatiempo, pero pronto descubrieron que era algo mucho más grande.  
+              Junto a otros dos músicos, formaron una pequeña agrupación, pero completa en su esencia. Desde el inicio, comenzaron a trabajar con dedicación y a darse a conocer. A pesar de ser solo seis integrantes, lograron sorprender a todos, demostrando que podían hacer sonar su música con la misma fuerza que una banda más grande. Cada vez que se presentaban, la gente quedaba encantada y no paraban de felicitarlos.  
+              Hoy sumando nuevos integrantes, pero manteniendo intacta su esencia familiar. Más que un grupo musical, se han convertido en una verdadera familia, compartiendo momentos tanto en el escenario como en los viajes.  
+              Después de 5 años, el mariachi se siente orgulloso de ser el embajador de las tradiciones de Acámbaro, Guanajuato, y de enseñar su música y su legado a todos los que desean unirse. *Mariachi Gallos de Acámbaro* 
             </p>
-            <ul>
-              <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-              <li><i class="bi bi-check2-all"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-              <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
-            </ul>
-            <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
+            
+            <p style="font-style: italic; font-size: 15px;">
+              "En Mariachi Gallos de Acámbaro, más que música, ofrecemos momentos inolvidables llenos de pasión y entrega. ¡Déjanos ser el mariachi de tus mejores recuerdos!"
             </p>
           </div>
         </div>
-
       </div>
-
     </section><!-- /About Section -->
+    
 
     <!-- Clients Section -->
     <section id="clients" class="clients section">
@@ -196,14 +192,17 @@
             }
           </script>
           <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="{% static 'assets/img/clients/client-1.png' %}" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="{% static 'assets/img/clients/client-2.png' %}" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="{% static 'assets/img/clients/client-3.png' %}" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="{% static 'assets/img/clients/client-4.png' %}" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="{% static 'assets/img/clients/client-5.png' %}" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="{% static 'assets/img/clients/client-6.png' %}" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="{% static 'assets/img/clients/client-7.png' %}" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="{% static 'assets/img/clients/client-8.png' %}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'assets/img/clients/acambaro.png' %}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'assets/img/clients/tarandacuao.png' %}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'assets/img/clients/hidalgo.png' %}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'assets/img/clients/zinapecuaro.png' %}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'assets/img/clients/salvatierra.png' %}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'assets/img/clients/santa.png' %}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'assets/img/clients/uriangato.png' %}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'assets/img/clients/iramuco.png' %}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'assets/img/clients/chupicuaro.png' %}" class="img-fluid" alt=""></div>
+
+
           </div>
           <div class="swiper-pagination"></div>
         </div>
@@ -211,15 +210,13 @@
       </div>
 
     </section><!-- /Clients Section -->
-
-    <!-- Features Section -->
+<!--
     <section id="features" class="features section">
 
       <div class="container">
 
         <div class="row gy-4">
-          <div class="features-image col-lg-6" data-aos="fade-up" data-aos-delay="100"><img src="assets/img/features-bg.jpg" alt=""></div>
-          <div class="col-lg-6">
+          <div class="features-image col-lg-6" data-aos="fade-up" data-aos-delay="100"><img src="{% static 'assets/img/features-bg.jpg' %}" alt=""></div>          <div class="col-lg-6">
 
             <div class="features-item d-flex ps-0 ps-lg-3 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="200">
               <i class="bi bi-archive flex-shrink-0"></i>
@@ -227,7 +224,7 @@
                 <h4>Est labore ad</h4>
                 <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
               </div>
-            </div><!-- End Features Item-->
+            </div>
 
             <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="300">
               <i class="bi bi-basket flex-shrink-0"></i>
@@ -235,7 +232,7 @@
                 <h4>Harum esse qui</h4>
                 <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
               </div>
-            </div><!-- End Features Item-->
+            </div>
 
             <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="400">
               <i class="bi bi-broadcast flex-shrink-0"></i>
@@ -243,7 +240,7 @@
                 <h4>Aut occaecati</h4>
                 <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
               </div>
-            </div><!-- End Features Item-->
+            </div>
 
             <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="500">
               <i class="bi bi-camera-reels flex-shrink-0"></i>
@@ -251,22 +248,22 @@
                 <h4>Beatae veritatis</h4>
                 <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
               </div>
-            </div><!-- End Features Item-->
+            </div>
 
           </div>
         </div>
 
       </div>
 
-    </section><!-- /Features Section -->
-
+    </section>
+  -->
     <!-- Services Section -->
     <section id="services" class="services section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <p>Check our Services</p>
+        <h2>Contratos</h2>
+        <p>Modalidades de contratos</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -276,39 +273,40 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="service-item position-relative">
               <div class="icon">
-                <i class="bi bi-activity"></i>
+                <i class="bi bi-hearts"></i>
               </div>
               <a href="service-details.html" class="stretched-link">
-                <h3>Nesciunt Mete</h3>
+                <h3>Serenatas</h3>
               </a>
-              <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
+              <p>Haz de cualquier ocasión un momento inolvidable. Sorprende a tu ser querido con una hermosa serenata de aproximadamente 15 minutos, llena de emoción, tradición y la mejor música de mariachi.</p>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="service-item position-relative">
               <div class="icon">
-                <i class="bi bi-broadcast"></i>
+                <i class="bi bi-house-heart"></i>
+                </i>
               </div>
               <a href="service-details.html" class="stretched-link">
-                <h3>Eosle Commodi</h3>
+                <h3>1 Hora</h3>
               </a>
-              <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
+              <p>Celebra los momentos más especiales en familia con una hora de mariachi a capela, llenando el ambiente de armonía, tradición y emoción.</p>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="service-item position-relative">
               <div class="icon">
-                <i class="bi bi-easel"></i>
+                <i class="bi bi-calendar-heart-fill"></i>
               </div>
               <a href="service-details.html" class="stretched-link">
-                <h3>Ledo Markt</h3>
+                <h3>Evento personalizado</h3>
               </a>
-              <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
+              <p>Para esos eventos especiales donde deseas disfrutar de un gran mariachi con la mejor calidad de sonido, ofrecemos una presentación con equipo de audio incluido para ti y tus invitados</p>
             </div>
           </div><!-- End Service Item -->
-
+<!--
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
             <div class="service-item position-relative">
               <div class="icon">
@@ -320,7 +318,7 @@
               <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
               <a href="service-details.html" class="stretched-link"></a>
             </div>
-          </div><!-- End Service Item -->
+          </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
             <div class="service-item position-relative">
@@ -333,7 +331,7 @@
               <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
               <a href="service-details.html" class="stretched-link"></a>
             </div>
-          </div><!-- End Service Item -->
+          </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
             <div class="service-item position-relative">
@@ -346,8 +344,8 @@
               <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
               <a href="service-details.html" class="stretched-link"></a>
             </div>
-          </div><!-- End Service Item -->
-
+          </div>
+        -->
         </div>
 
       </div>
@@ -363,9 +361,9 @@
         <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
           <div class="col-xl-10">
             <div class="text-center">
-              <h3>Call To Action</h3>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <a class="cta-btn" href="#">Call To Action</a>
+              <h3>"¿Te interesa contratar nuestros servicios?" ✨   </h3>
+              <p>Haz de tu evento una experiencia inolvidable con la mejor música de mariachi. Contáctanos y reserva ahora para sorprender a tus seres queridos con una presentación llena de pasión y tradición</p>
+              <a class="cta-btn" href="#contact">Contactanos</a>
             </div>
           </div>
         </div>
@@ -767,40 +765,42 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Contact Us</p>
+        <h2>Contacto</h2>
+        <P>Forma de contactanos</P>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="mb-4" data-aos="fade-up" data-aos-delay="200">
-          <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d468.57259190228353!2d-100.731124!3d20.0261039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842cd7af93d7b975%3A0xab185c7bc70bf8d8!2sMariachi%20Gallos%20de%20Ac%C3%A1mbaro!5e0!3m2!1ses-419!2smx!4v1742851850988!5m2!1ses-419!2smx" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div><!-- End Google Maps -->
 
         <div class="row gy-4">
 
           <div class="col-lg-4">
+            <p style="font-size: 15px; text-align: center;">Déjanos tus datos y nos pondremos en contacto contigo lo antes posible. También puedes comunicarte directamente con el Mariachi Gallos de Acámbaro a través del número que aparece abajo.</p>
+
             <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
               <i class="bi bi-geo-alt flex-shrink-0"></i>
               <div>
-                <h3>Address</h3>
-                <p>A108 Adam Street, New York, NY 535022</p>
+                <h3>Domicilio</h3>
+                <p>Jesus Garcia Corona #117, Acambaro Guanajuato</p>
               </div>
             </div><!-- End Info Item -->
 
             <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
               <i class="bi bi-telephone flex-shrink-0"></i>
               <div>
-                <h3>Call Us</h3>
-                <p>+1 5589 55488 55</p>
+                <h3>Telefono</h3>
+                <p>417 178 1835</p>
               </div>
             </div><!-- End Info Item -->
 
             <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
               <i class="bi bi-envelope flex-shrink-0"></i>
               <div>
-                <h3>Email Us</h3>
-                <p>info@example.com</p>
+                <h3>Correo</h3>
+                <p>janito@nalgon.com</p>
               </div>
             </div><!-- End Info Item -->
 
@@ -811,19 +811,26 @@
               <div class="row gy-4">
 
                 <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                  <label>Nombre</label>
+                  <input type="text" name="name" class="form-control" required="">
                 </div>
 
                 <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                  <label>Correo</label>
+                  <input type="email" class="form-control" name="email" required="">
                 </div>
+                <div class="icon-box">
+                  <div class="datetimepicker">
+                    <input type="date" id="date" value="2018-07-03">
+                    <input type="time" id="time" value="08:00">
+                  </div>                
+                </div>
+               
+                
 
                 <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                  <label>Comentarios</label>
+                  <textarea class="form-control" name="message" rows="6"  required=""></textarea>
                 </div>
 
                 <div class="col-md-12 text-center">
@@ -936,10 +943,20 @@
   <script src="{% static 'assets/vendor/imagesloaded/imagesloaded.pkgd.min.js' %}"></script>
   <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
   <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tempusdominus-bootstrap-4@5.1.0/build/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/moment@2.29.1/moment.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tempusdominus-bootstrap-4@5.1.0/build/js/tempusdominus-bootstrap-4.min.js"></script>
   
   <!-- Main JS File -->
   <script src="{% static 'assets/js/main.js' %}"></script>
-  
+  <script>
+   var dateEl = document.getElementById('date');
+var timeEl = document.getElementById('time');
+
+document.getElementById('date-output').innerHTML = dateEl.type === 'date';
+document.getElementById('time-output').innerHTML = timeEl.type === 'time';
+  </script>
 </body>
 
 </html>
