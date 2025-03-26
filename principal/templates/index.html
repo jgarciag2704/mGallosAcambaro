@@ -27,7 +27,69 @@
 <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
 <link href="{% static 'assets/css/propio.css' %}" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/tempusdominus-bootstrap-4@5.1.0/build/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+<style>
+.team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #fff; /* Fondo blanco para uniformidad */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    height: 100%; /* Hace que todas las tarjetas tengan la misma altura */
+}
 
+.member-img {
+    width: 100%;
+    height: 400px; /* Establece una altura fija para todas las imágenes */
+    overflow: hidden; /* Evita que las imágenes más grandes se desborden */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.member-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Recorta y ajusta la imagen para llenar el espacio sin deformarse */
+}
+
+
+.member-info {
+    flex-grow: 1; /* Hace que todas las tarjetas tengan la misma altura */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social a {
+    color: #000;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.social a:hover {
+    color: #007bff;
+}
+
+.counter-container {
+  display: inline-flex;
+  align-items: center;
+  font-size: 40px; /* Ajusta según el tamaño de tu contador */
+  font-weight: 700;
+}
+
+</style>
 
   <!-- =======================================================
   * Template Name: Gp
@@ -376,7 +438,7 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
+        <h2>Galeria</h2>
         <p>Check our Portfolio</p>
       </div><!-- End Section Title -->
 
@@ -492,67 +554,70 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row gy-4 align-items-center justify-content-between">
-
+      
           <div class="col-lg-5">
-            <img src="{% static 'assets/img/stats-img.jpg' %}" alt="" class="img-fluid">
+            <img src="{% static 'assets/img/propias/Rincon.jpeg' %}" alt="Imagen representativa" class="img-fluid" style="height: 500px;">
           </div>
-
+      
           <div class="col-lg-6">
-
-            <h3 class="fw-bold fs-2 mb-3">Voluptatem dignissimos provident quasi</h3>
+      
+            <h3 class="fw-bold fs-2 mb-3">Gracias a ti, hemos llegado a cada rincón de México</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+              Nuestro amor por el mariachi nos ha llevado a recorrer distintos estados y compartir nuestra música con cientos de personas. Nos sentimos honrados de ser parte de momentos inolvidables, llevando nuestra pasión a cada presentación.
             </p>
-
+      
             <div class="row gy-4">
-
-              <div class="col-lg-6">
-                <div class="stats-item d-flex">
-                  <i class="bi bi-emoji-smile flex-shrink-0"></i>
-                  <div>
-                    <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-                    <p><strong>Happy Clients</strong> <span>consequuntur quae</span></p>
-                  </div>
-                </div>
-              </div><!-- End Stats Item -->
-
-              <div class="col-lg-6">
-                <div class="stats-item d-flex">
-                  <i class="bi bi-journal-richtext flex-shrink-0"></i>
-                  <div>
-                    <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-                    <p><strong>Projects</strong> <span>adipisci atque cum quia aut</span></p>
-                  </div>
-                </div>
-              </div><!-- End Stats Item -->
-
-              <div class="col-lg-6">
-                <div class="stats-item d-flex">
-                  <i class="bi bi-headset flex-shrink-0"></i>
-                  <div>
-                    <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
-                    <p><strong>Hours Of Support</strong> <span>aut commodi quaerat</span></p>
-                  </div>
-                </div>
-              </div><!-- End Stats Item -->
-
+      
               <div class="col-lg-6">
                 <div class="stats-item d-flex">
                   <i class="bi bi-people flex-shrink-0"></i>
                   <div>
-                    <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
-                    <p><strong>Hard Workers</strong> <span>rerum asperiores dolor</span></p>
+                    <span data-purecounter-start="0" data-purecounter-end="9" data-purecounter-duration="1" class="purecounter"></span>
+                    <p><strong>Integrantes apasionados</strong> <span>compartiendo el amor por el mariachi contigo</span></p>
                   </div>
                 </div>
               </div><!-- End Stats Item -->
-
+      
+              <div class="col-lg-6">
+                <div class="stats-item d-flex">
+                  <i class="bi bi-emoji-smile flex-shrink-0"></i>
+                  <div>
+                    <span class="counter-container">
+                      <strong>+</strong><span class="purecounter" data-purecounter-start="0" data-purecounter-end="1000" data-purecounter-duration="1"></span>
+                    </span>
+                   <p><strong>Clientes felices</strong> <span>han disfrutado de nuestras presentaciones</span></p>
+                  </div>
+                </div>
+              </div><!-- End Stats Item -->
+      
+              <div class="col-lg-6">
+                <div class="stats-item d-flex">
+                  <i class="bi bi-journal-richtext flex-shrink-0"></i>
+                  <div>
+                    <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1" class="purecounter"></span>
+                    <p><strong>Estados visitados</strong> <span>llevando nuestra música más allá de Guanajuato</span></p>
+                  </div>
+                </div>
+              </div><!-- End Stats Item -->
+      
+              <div class="col-lg-6">
+                <div class="stats-item d-flex">
+                  <i class="bi bi-headset flex-shrink-0"></i>
+                  <div>
+                    <span data-purecounter-start="0" data-purecounter-end="121" data-purecounter-duration="1" class="purecounter"></span>
+                    <p><strong>Municipios recorridos</strong> <span>desde grandes ciudades hasta comunidades rurales</span></p>
+                  </div>
+                </div>
+              </div><!-- End Stats Item -->
+      
             </div>
-
+      
           </div>
-
+      
         </div>
-
+      
       </div>
+      
 
     </section><!-- /Stats Section -->
 
@@ -674,18 +739,18 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Team</h2>
-        <p>our Team</p>
+        <h2>Mariachi Gallos de acambaro</h2>
+        <p>Integrantes</p>
       </div><!-- End Section Title -->
 
       <div class="container">
 
         <div class="row gy-4">
 
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-2_4 col-md-4 col-sm-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
             <div class="team-member">
               <div class="member-img">
-                <img src="{% static 'assets/img/team/team-1.jpg' %}" class="img-fluid" alt="">
+                <img src="{% static 'assets/img/propias/Jesus bernal.jpeg' %}" class="img-fluid" alt="">
                 <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -694,16 +759,16 @@
                 </div>
               </div>
               <div class="member-info">
-                <h4>Walter White</h4>
-                <span>Chief Executive Officer</span>
+                <h4>Chucho Bernal</h4>
+                <span>Vihuelista</span>
               </div>
             </div>
           </div><!-- End Team Member -->
 
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-2_4 col-md-4 col-sm-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
             <div class="team-member">
               <div class="member-img">
-                <img src="{% static 'assets/img/team/team-2.jpg' %}" class="img-fluid" alt="">
+                <img src="{% static 'assets/img/propias/Jano.jpeg' %}" class="img-fluid" alt="">
                 <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -712,16 +777,16 @@
                 </div>
               </div>
               <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
+                <h4>Alejandro Bernal</h4>
+                <span>Violinista</span>
               </div>
             </div>
           </div><!-- End Team Member -->
 
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-lg-2_4 col-md-4 col-sm-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
             <div class="team-member">
               <div class="member-img">
-                <img src="{% static 'assets/img/team/team-3.jpg' %}" class="img-fluid" alt="">
+                <img src="{% static 'assets/img/propias/Cesar.jpeg' %}" class="img-fluid" alt="">
                 <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -730,16 +795,16 @@
                 </div>
               </div>
               <div class="member-info">
-                <h4>William Anderson</h4>
-                <span>CTO</span>
+                <h4>Julio Bernal</h4>
+                <span>Trompetista</span>
               </div>
             </div>
           </div><!-- End Team Member -->
 
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+          <div class="col-lg-2_4 col-md-4 col-sm-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
             <div class="team-member">
               <div class="member-img">
-                <img src="{% static 'assets/img/team/team-4.jpg' %}" class="img-fluid" alt="">
+                <img src="{% static 'assets/img/propias/Fer.jpeg' %}" class="img-fluid" alt="">
                 <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -748,8 +813,93 @@
                 </div>
               </div>
               <div class="member-info">
-                <h4>Amanda Jepson</h4>
-                <span>Accountant</span>
+                <h4>Fernanda Bernal</h4>
+                <span>Violinista</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2_4 col-md-4 col-sm-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="{% static 'assets/img/propias/Uriel.jpeg' %}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Uriel Mercado</h4>
+                <span>Trompetista</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2_4 col-md-4 col-sm-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="{% static 'assets/img/propias/Raul.jpeg' %}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Raul Hernandez</h4>
+                <span>Guitarronero</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2_4 col-md-4 col-sm-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="{% static 'assets/img/propias/Armando.jpeg' %}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Armando</h4>
+                <span>Violinista</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2_4 col-md-4 col-sm-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="{% static 'assets/img/propias/Emilio.jpeg' %}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Emiliano</h4>
+                <span>Violinista</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2_4 col-md-4 col-sm-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="{% static 'assets/img/propias/Irma.jpeg' %}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Irma Marin</h4>
+                <span>Vocalista</span>
               </div>
             </div>
           </div><!-- End Team Member -->
